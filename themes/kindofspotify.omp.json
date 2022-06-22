@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "spotify",
+          "style": "plain",
+          "foreground": "#ABB2BF",
+          "properties": {
+            "playing_icon": "<#98C379>\uE602</> ",
+            "paused_icon": "<#ABB2BF>\uF8E3</> ",
+            "stopped_icon": "<#E06C75>\uF04D</#> "
+          }
+        },
+        {
+          "type": "battery",
+          "style": "plain",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#193549",
+          "template": "- {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}%</> - ",
+          "properties": {
+            "discharging_icon": "<#E06C75>\uE231  ",
+            "charging_icon": "<#E5C07B>\uE234  ",
+            "charged_icon": "<#98C379>\uE22F  "
+          }
+        },
+        {
+          "foreground": "#56B6C2",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "{{ .Path }}",
+          "type": "path"
+        },
+        {
+          "foreground": "#E06C75",
+          "properties": {
+            "branch_icon": "<#ABB2BF>\ue0a0</> "
+          },
+          "style": "plain",
+          "template": " {{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#e03543",
+          "style": "plain",
+          "template": " \uf119  ",
+          "type": "exit"
+        },
+        {
+          "foreground": "#ABB2BF",
+          "style": "plain",
+          "template": "<#98C379>></>",
+          "type": "git"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
