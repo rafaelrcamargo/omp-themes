@@ -1,1 +1,0 @@
-In "C:\Users\Avanti\Documents\PowerShell\Microsoft.PowerShell_profile.ps1" add the command, "oh-my-posh --init --shell pwsh --config "C:\Users\Avanti\AppData\Local\oh-my-posh\mine.omp.json" | Invoke-Expression", is this easy!
